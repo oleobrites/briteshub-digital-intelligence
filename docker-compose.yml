@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  briteshub:
+    build: .
+    container_name: briteshub
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.briteshub.rule=Host(`briteshub.com.br`)"
+      - "traefik.http.routers.briteshub.entrypoints=websecure"
+      - "traefik.http.routers.briteshub.tls.certresolver=letsencrypt"
+    networks:
+      - traefik_public
+
+networks:
+  traefik_public:
+    external: true

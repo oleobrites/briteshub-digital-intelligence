@@ -2,13 +2,14 @@ version: "3.8"
 
 services:
   briteshub:
-    build: .
-    container_name: briteshub
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.briteshub.rule=Host(`briteshub.com.br`)"
-      - "traefik.http.routers.briteshub.entrypoints=websecure"
-      - "traefik.http.routers.briteshub.tls.certresolver=letsencrypt"
+    image: l32oo/briteshub:v1
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.briteshub.rule=Host(`briteshub.com.br`)"
+        - "traefik.http.routers.briteshub.entrypoints=websecure"
+        - "traefik.http.routers.briteshub.tls.certresolver=letsencrypt"
+        - "traefik.http.services.briteshub.loadbalancer.server.port=80"
     networks:
       - traefik_public
 

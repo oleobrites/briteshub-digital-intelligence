@@ -51,7 +51,7 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button variant="default" size="sm" asChild>
-              <a href="#contato">Fale Comigo</a>
+              <a href="/formulario">Iniciar Projeto</a>
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ const Header = () => {
               ))}
               <Button variant="default" size="sm" className="mt-2" asChild>
                 <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>
-                  Fale Comigo
+                  Iniciar Projeto
                 </a>
               </Button>
             </div>

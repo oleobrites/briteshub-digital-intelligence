@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
+// 1. Importamos o seu novo componente aqui
+// Como ele está na pasta components, o caminho é esse:
+import Formulario from "./components/formulario";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -16,7 +20,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          
+          {/* 2. Adicionamos a rota nova AQUI, antes do asterisco (*) */}
+          <Route path="/formulario" element={<Formulario />} />
+
+          {/* Rota para erro 404 (sempre deixe por último) */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

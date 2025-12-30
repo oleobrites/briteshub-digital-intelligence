@@ -56,7 +56,7 @@ const Hero = () => {
             style={{ animationDelay: "0.4s" }}
           >
             <Button variant="hero" size="xl" asChild>
-              <a href="#contato">
+              <a href="/formulario">
                 Iniciar Projeto
                 <ArrowRight className="w-5 h-5" />
               </a>

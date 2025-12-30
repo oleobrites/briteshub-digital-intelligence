@@ -2,12 +2,12 @@ import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   const services = [
-    "Sites e Landing Pages",
-    "Tráfego Pago",
-    "Automações",
-    "Agentes de IA",
-    "Tracking e Analytics",
-    "CRM"
+    "Serviços e páginas de vendas",
+    "Anúncios no Google e Redes Sociais",
+    "Automação de Tarefas",
+    "Atendimento com Inteligência Artificial",
+    "Tracking Avançado e Analytics",
+    "Organização do Comercial (CRM)"
   ];
 
   return (

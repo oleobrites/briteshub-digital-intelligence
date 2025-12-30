@@ -74,7 +74,7 @@ const Hero = () => {
             style={{ animationDelay: "0.5s" }}
           >
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-foreground">+100</div>
+              <div className="text-3xl md:text-4xl font-bold text-foreground">+1000</div>
               <div className="text-sm text-muted-foreground mt-1">Projetos Entregues</div>
             </div>
             <div className="text-center">

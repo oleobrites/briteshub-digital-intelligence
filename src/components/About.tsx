@@ -4,8 +4,8 @@ const About = () => {
   const highlights = [
     {
       icon: Target,
-      title: "Estratégia",
-      description: "Planejamento orientado por dados e objetivos claros de negócio."
+      title: "Diagnóstico Data-Driven",
+      description: "Decisões baseadas no comportamento do usuário e análise de dados, zero achismo."
     },
     {
       icon: Zap,
@@ -14,8 +14,8 @@ const About = () => {
     },
     {
       icon: LineChart,
-      title: "Resultados",
-      description: "Métricas reais, otimização contínua e crescimento mensurável."
+      title: "Escala Previsível",
+      description: "Otimização contínua baseada em dados reais, não em intuição. O foco é sempre o lucro líquido."
     }
   ];
 
@@ -29,18 +29,17 @@ const About = () => {
               Sobre
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Soluções digitais que{" "}
-              <span className="text-gradient">geram resultados</span>
+              Menos "agência",{" "}
+              <span className="text-gradient">mais engenharia de vendas.</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-              A Briteshub é um estúdio freelance especializado em performance digital. 
-              Combinamos estratégia, tecnologia e execução para criar sistemas que 
-              realmente funcionam.
+              A Briteshub nasceu para preencher a lacuna entre o marketing tradicional e a tecnologia avançada.
+               Enquanto o mercado foca em métricas de vaidade, nós focamos na infraestrutura do seu faturamento.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              De sites de alta conversão a automações inteligentes com IA, cada projeto 
-              é desenvolvido com foco em resolver problemas reais e escalar negócios 
-              de forma sustentável.
+              Não entregamos apenas "campanhas" ou "sites". Entregamos ecossistemas comerciais que usam
+               Inteligência Artificial para eliminar trabalho manual e Tráfego Estratégico para garantir previsibilidade.
+                Somos o braço direito de tecnologia para negócios que querem escalar.
             </p>
           </div>
 

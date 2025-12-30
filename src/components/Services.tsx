@@ -12,26 +12,26 @@ const Services = () => {
   const services = [
     {
       icon: Globe,
-      title: "Criação de Sites e Landing Pages",
-      description: "Sites e landing pages focados em conversão e performance. Rápidos, responsivos e otimizados para SEO.",
-      features: ["Alta conversão", "Performance otimizada", "SEO técnico"]
+      title: "Sites e Páginas de Vendas",
+      description: "Criamos sites rápidos e profissionais focados em uma única coisa: transformar visitantes em clientes reais. Nada de enrolação, apenas o design certo para vender.",
+      features: ["Alta conversão", "Rápido no Celular", "Design Moderno"]
     },
     {
       icon: Target,
-      title: "Gestão de Tráfego Pago",
-      description: "Campanhas estratégicas em Meta Ads e Google Ads com foco em ROI e resultados mensuráveis.",
-      features: ["Meta Ads", "Google Ads", "Orientado a dados"]
+      title: "Anúncios no Google e Redes Sociais",
+      description: "Colocamos sua empresa na frente de quem já está procurando pelo seu produto. Gerenciamos seus anúncios no Instagram, Facebook e Google para atrair compradores, não apenas curiosos.",
+      features: ["Instagram Ads", "Google Ads", "Mais clientes"]
     },
     {
       icon: Workflow,
-      title: "Automações e Integrações",
-      description: "Automatização de processos repetitivos e integrações via APIs para otimização operacional.",
-      features: ["Automação de processos", "Integrações API", "Eficiência operacional"]
+      title: "Automação de Tarefas",
+      description: "Chega de fazer trabalho repetitivo manual. Conectamos suas ferramentas para que planilhas, notas fiscais e cadastros aconteçam sozinhos, poupando horas da sua semana.",
+      features: ["Automação de processos", "Ganhe Tempo", "Eficiência operacional"]
     },
     {
       icon: Bot,
-      title: "Agentes de Inteligência Artificial",
-      description: "Assistentes inteligentes personalizados para vendas, suporte ao cliente e marketing automatizado.",
+      title: "Atendimento com Inteligência Artificial",
+      description: "Assistentes inteligentes personalizados para vendas, suporte ao cliente e marketing automatizaInstale um funcionário digital que responde seus clientes no WhatsApp instantaneamente, 24 horas por dia. Ele tira dúvidas e agenda reuniões enquanto você dorme.",
       features: ["Chatbots IA", "Atendimento 24/7", "Vendas automatizadas"]
     },
     {
@@ -42,9 +42,9 @@ const Services = () => {
     },
     {
       icon: Users,
-      title: "Estruturação e Otimização de CRM",
-      description: "Funis de vendas otimizados, gestão de leads eficiente e integrações automatizadas com seu CRM.",
-      features: ["Funis de vendas", "Gestão de leads", "Automações CRM"]
+      title: "Organização do Comercial (CRM)",
+      description: "Organizamos seus contatos e processos de venda. Sua equipe nunca mais vai esquecer de responder um cliente ou perder uma venda por falta de organização.",
+      features: ["Gestão de Vendas", "Organização", "Funil de Vendas"]
     }
   ];
 
@@ -56,15 +56,15 @@ const Services = () => {
       <div className="container px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-            Serviços
+            ECOSSISTEMA INTEGRADO
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Tudo que seu negócio precisa para{" "}
-            <span className="text-gradient">escalar</span>
+            Chega de estratégias {" "}
+            <span className="text-gradient">fragmentadas.</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Soluções completas e integradas para performance digital, 
-            do planejamento estratégico à execução técnica.
+            Unificamos aquisição, dados e automação em uma única esteira de performance. Cada serviço abaixo é uma engrenagem conectada,
+             projetada para reduzir seu custo operacional e maximizar o lucro.
           </p>
         </div>
 

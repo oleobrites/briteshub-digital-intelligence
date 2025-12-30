@@ -16,21 +16,19 @@ const CTA = () => {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Pronto para{" "}
-            <span className="text-gradient">transformar</span>
-            {" "}seu digital?
+            Pare de deixar {" "}
+            <span className="text-gradient">dinheiro</span>
+            {" "}na mesa.
           </h2>
           
           <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
-            Entre em contato para uma conversa estratégica sobre seu projeto. 
-            Sem pressão, sem compromisso. Apenas uma análise honesta do que 
-            podemos construir juntos.
+            Seu negócio tem potencial para vender muito mais. Agende uma conversa rápida e descubra exatamente onde estão os gargalos que impedem seu crescimento hoje.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="xl" asChild>
               <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
-                Fale Comigo
+                Iniciar Projeto
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
@@ -42,7 +40,7 @@ const CTA = () => {
           </div>
 
           <p className="text-sm text-muted-foreground mt-8">
-            Resposta em até 24 horas úteis
+            Atendimento imediato.
           </p>
         </div>
       </div>

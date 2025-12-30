@@ -5,26 +5,26 @@ const Process = () => {
     {
       icon: Search,
       number: "01",
-      title: "Estratégia",
-      description: "Análise profunda do seu negócio, objetivos e mercado para definir a melhor abordagem."
+      title: "O Plano de Ação",
+      description: "Definimos quem é seu cliente ideal e qual oferta vamos usar para atraí-lo. Sem reuniões intermináveis, foco no objetivo."
     },
     {
       icon: Hammer,
       number: "02",
-      title: "Construção",
-      description: "Desenvolvimento técnico com foco em performance, qualidade e prazos definidos."
+      title: "O Setup da Máquina",
+      description: "Configuramos toda a tecnologia necessária (Site, Pixels, CRM e Automação) para receber os leads e processar as vendas."
     },
     {
       icon: TrendingUp,
       number: "03",
-      title: "Otimização",
-      description: "Monitoramento contínuo, testes e ajustes para maximizar os resultados."
+      title: "Melhoria Contínua",
+      description: "Ficamos de olho nas métricas todos os dias. Cortamos o que gasta dinheiro à toa e focamos no que traz retorno."
     },
     {
       icon: Rocket,
       number: "04",
       title: "Escala",
-      description: "Expansão estratégica baseada em dados e resultados comprovados."
+      description: "Com a casa arrumada e vendendo, expandimos para novos canais e públicos, garantindo que sua empresa continue crescendo mês a mês."
     }
   ];
 
@@ -36,7 +36,7 @@ const Process = () => {
       <div className="container px-6 relative">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-primary text-sm font-medium tracking-wider uppercase mb-4 block">
-            Processo
+            PASSO A PASSO
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Como <span className="text-gradient">funciona</span>

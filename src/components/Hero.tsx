@@ -37,8 +37,8 @@ const Hero = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 opacity-0 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Performance, automação e{" "}
-            <span className="text-gradient">crescimento real</span>
+            Tráfego pago, automação e{" "}
+            <span className="text-gradient">agentes de IA!</span>
           </h1>
 
           {/* Subheadline */}
@@ -82,8 +82,8 @@ const Hero = () => {
               <div className="text-sm text-muted-foreground mt-1">de Experiência</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-foreground">ROI</div>
-              <div className="text-sm text-muted-foreground mt-1">Foco em Resultados</div>
+              <div className="text-3xl md:text-4xl font-bold text-foreground">+ R$ 50M</div>
+              <div className="text-sm text-muted-foreground mt-1"> Investidos em Ads </div>
             </div>
           </div>
         </div>

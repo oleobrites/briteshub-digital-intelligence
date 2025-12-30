@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   briteshub:
-    image: l32oo/briteshub:v1
+    image: l32oo/briteshub:v3
     deploy:
       labels:
         - "traefik.enable=true"

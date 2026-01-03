@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { Send, Loader2 } from "lucide-react";
-import { useNavigate } from "react-router-dom"; // Importação necessária para redirecionar
+import { useNavigate } from "react-router-dom";
 
 interface FormData {
   companyName: string;
@@ -21,6 +21,7 @@ interface FormData {
   marketTime: string;
   adBudget: string;
   name: string;
+  email: string; // Novo campo
   phone: string;
   source: string;
   notes: string;
@@ -28,7 +29,7 @@ interface FormData {
 
 const ContactForm = () => {
   const { toast } = useToast();
-  const navigate = useNavigate(); // Hook de navegação
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   const [formData, setFormData] = useState<FormData>({
@@ -39,6 +40,7 @@ const ContactForm = () => {
     marketTime: "",
     adBudget: "",
     name: "",
+    email: "", // Inicializa vazio
     phone: "",
     source: "",
     notes: "",
@@ -101,7 +103,6 @@ const ContactForm = () => {
         description: "Redirecionando...",
       });
 
-      // Redireciona para a página de obrigado
       navigate("/obrigado");
 
     } catch (error) {
@@ -236,6 +237,22 @@ const ContactForm = () => {
           name="name"
           placeholder="Inserir texto"
           value={formData.name}
+          onChange={handleChange}
+          required
+        />
+      </div>
+
+      {/* E-mail (NOVO) */}
+      <div className="space-y-2">
+        <label htmlFor="email" className="text-sm font-medium text-foreground">
+          E-mail profissional<span className="text-destructive">*</span>
+        </label>
+        <Input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="seu@email.com"
+          value={formData.email}
           onChange={handleChange}
           required
         />

@@ -18,6 +18,8 @@ const Header = () => {
     { href: "#sobre", label: "Sobre" },
     { href: "#servicos", label: "Serviços" },
     { href: "#processo", label: "Processo" },
+    // Novo Link Blog
+    { href: "https://blog.briteshub.com.br", label: "Blog", external: true },
   ];
 
   return (
@@ -31,7 +33,7 @@ const Header = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="text-xl font-bold">
+          <a href="/" className="text-xl font-bold">
             Brites<span className="text-primary">hub</span>
           </a>
 
@@ -39,8 +41,10 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
-                key={link.href}
+                key={link.label} // Use label como key pois href pode repetir se mudar estrutura
                 href={link.href}
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 {link.label}
@@ -75,8 +79,10 @@ const Header = () => {
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
-                  key={link.href}
+                  key={link.label}
                   href={link.href}
+                  target={link.external ? "_blank" : undefined}
+                  rel={link.external ? "noopener noreferrer" : undefined}
                   className="text-muted-foreground hover:text-foreground transition-colors py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -84,7 +90,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="default" size="sm" className="mt-2" asChild>
-                <a href="#contato" onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="/formulario" onClick={() => setIsMobileMenuOpen(false)}>
                   Iniciar Projeto
                 </a>
               </Button>

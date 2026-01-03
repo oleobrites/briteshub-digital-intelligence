@@ -5,10 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-
-// 1. Importamos o seu novo componente aqui
-// Como ele está na pasta components, o caminho é esse:
 import Formulario from "./components/formulario";
+import Obrigado from "./pages/Obrigado"; // <--- 1. Importe a página
 
 const queryClient = new QueryClient();
 
@@ -20,11 +18,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          
-          {/* 2. Adicionamos a rota nova AQUI, antes do asterisco (*) */}
           <Route path="/formulario" element={<Formulario />} />
+          
+          {/* 2. Adicione a rota aqui */}
+          <Route path="/obrigado" element={<Obrigado />} />
 
-          {/* Rota para erro 404 (sempre deixe por último) */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
